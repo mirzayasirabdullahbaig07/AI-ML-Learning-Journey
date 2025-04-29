@@ -9,6 +9,7 @@ print(False) #Boolean
 print(0.1) #float
 print(2 + 3j) #complex number
 
+
 # You can print many different things in one time
 print("India", "Pakistan", "Nepal")
 
