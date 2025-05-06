@@ -42,6 +42,8 @@ for i in range(1, 5):
 for i in range(10):
     print("Python is Fun!")
 
+# Date: 5 May 2025
+
 # 11. Print a line with escape characters: \t \n \\
 print11 = "My name is Yasir"
 print(print11, "\tBaig")
@@ -88,3 +90,5 @@ How I wonder what you are
 Up above the world so high
 Like a diamond in the sky"""
 print(multiline_poem)
+
+# Date: 6 May 2025
