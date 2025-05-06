@@ -3,20 +3,7 @@
 # ============================
 # 01_Print_Func_Python (20 problems)
 # ============================
-# 1. Print your name.
-# 2. Print your age.
-# 3. Print your favorite quote.
-# 4. Print the result of 5 + 7.
-# 5. Print your full name on one line.
-# 6. Print your full name on two lines.
-# 7. Print a square using asterisk (*) of size 5x5.
-# 8. Print the table of 5 using print only.
-# 9. Print a pattern using loops:
-#     *
-#     **
-#     ***
-#     ****
-# 10. Print “Python is Fun!” 10 times.
+
 # 11. Print a line with escape characters: \t \n \\
 # 12. Print a formatted address using multiple print statements.
 # 13. Print your name surrounded by stars like ***Yasir***
