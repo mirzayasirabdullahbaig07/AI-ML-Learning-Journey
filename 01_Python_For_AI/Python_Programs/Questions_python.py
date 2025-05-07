@@ -4,30 +4,12 @@
 # 01_Print_Func_Python (20 problems)
 # ============================
 
-# 11. Print a line with escape characters: \t \n \\
-# 12. Print a formatted address using multiple print statements.
-# 13. Print your name surrounded by stars like ***Yasir***
-# 14. Print the type of your name using the print function.
-# 15. Print a floating point number rounded to 2 decimal places.
-# 16. Print a smiley face using Unicode.
-# 17. Print a triangle pattern using only print.
-# 18. Print the current year hardcoded.
-# 19. Print a separator line 30 dashes long.
-# 20. Print a multiline string poem using triple quotes.
+
 
 # ============================
 # 02_Datatypes_Func_Python (25 problems)
 # ============================
-# 1. Declare an integer variable and print it.
-# 2. Declare a float variable and print it.
-# 3. Declare a string variable and print it.
-# 4. Check the type of an integer using type().
-# 5. Check the type of a float using type().
-# 6. Check the type of a string using type().
-# 7. Convert an integer to float and print it.
-# 8. Convert a float to integer and print it.
-# 9. Convert an integer to a string and print it.
-# 10. Add an integer and a float and print the result.
+
 # 11. Concatenate two strings and print.
 # 12. Multiply a string 5 times and print.
 # 13. Create a boolean variable and print it.
