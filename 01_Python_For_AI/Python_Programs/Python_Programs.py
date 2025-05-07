@@ -41,8 +41,7 @@ for i in range(1, 5):
 # 10. Print “Python is Fun!” 10 times.
 for i in range(10):
     print("Python is Fun!")
-
-# Date: 5 May 2025
+# Date:  May 2025
 
 # 11. Print a line with escape characters: \t \n \\
 print11 = "My name is Yasir"
