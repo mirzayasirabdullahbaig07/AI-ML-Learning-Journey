@@ -10,16 +10,7 @@
 # 02_Datatypes_Func_Python (25 problems)
 # ============================
 
-# 11. Concatenate two strings and print.
-# 12. Multiply a string 5 times and print.
-# 13. Create a boolean variable and print it.
-# 14. Use `isinstance()` to check if a variable is of type float.
-# 15. Declare multiple variables in one line and print them.
-# 16. Swap two variables and print the result.
-# 17. Store a complex number and print its real and imaginary parts.
-# 18. Round a float number to 3 decimal places.
-# 19. Format a float to show with commas (e.g., 1,000,000.50).
-# 20. Get the ASCII value of a character using `ord()`.
+
 # 21. Get the character from ASCII code using `chr()`.
 # 22. Print the memory address of a variable using `id()`.
 # 23. Use f-string to print a sentence with name and age.

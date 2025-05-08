@@ -128,3 +128,52 @@ float_one = 0.8
 print(int_one + float_one)
 
 # Date: 7 May 2025
+
+# 31. Concatenate two strings and print.
+str_one = "Mirza Yasir"
+str_two = "Abdullah Baig"
+print(str_one + str_two)
+
+# 32. Multiply a string 5 times and print.
+mult_string = "Yasir"
+print(mult_string * 5)
+
+# 33. Create a boolean variable and print it.
+bol_var = False
+print(bol_var)
+
+# 34. Use `isinstance()` to check if a variable is of type float.
+check_float = 0.7
+print(isinstance(check_float, float))
+
+# 35. Declare multiple variables in one line and print them.
+a = b = c = 3
+print(a)
+print(b)
+print(c)
+
+# 36. Swap two variables and print the result.
+sawp_var1 = "Mirza"
+sawp_var2 = "Yasir"
+sawp_var1, sawp_var2 = sawp_var2, sawp_var1
+print("sawp_var1:", sawp_var1)
+print("sawp_var2:", sawp_var2)
+
+# 37. Store a complex number and print its real and imaginary parts.
+complex_num = 2 + 3j  # Corrected to a complex number
+print(complex_num.real)
+print(complex_num.imag)
+
+# 38. Round a float number to 3 decimal places.
+float_decimal = 1.2355
+print(round(float_decimal, 3))
+
+# 39. Format a float to show with commas (e.g., 1,000,000.50).
+format_commas = 100000000
+print(format(format_commas, ","))
+
+# 40. Get the ASCII value of a character using `ord()`.
+ascii_value = "Y"
+print(ord(ascii_value))
+
+# Date: 8 May 2025
