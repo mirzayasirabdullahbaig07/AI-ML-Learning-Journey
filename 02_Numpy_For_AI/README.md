@@ -72,5 +72,4 @@ Welcome to the **NumPy** section of my **AI/ML Learning Journey**, where I am pr
 
 ---
 
-## 📂 File Structure
 
