@@ -138,3 +138,47 @@ How would you like to proceed?
 
 # Create ATM object to start
 atm = Atm()
+
+
+# What is 'self' in Python OOP?
+# 'self' represents the instance of the class. It allows access to the attributes and methods of the class in object context.
+# Every instance method in a class takes 'self' as the first parameter.
+
+# A class in Python contains:
+# 1. Data (variables)
+# 2. Methods (functions)
+
+# Only objects of a class can access instance attributes and methods.
+# Methods within the same class can access each other using 'self'.
+
+class Fraction:
+    def __init__(self, n, d):
+        self.num = n      # numerator
+        self.den = d      # denominator
+
+    def __str__(self):
+        return "{}/{}".format(self.num, self.den)
+
+    def __add__(self, other):
+        # (a/b) + (c/d) = (ad + bc) / bd
+        temp_num = self.num * other.den + other.num * self.den
+        temp_den = self.den * other.den 
+        return "{}/{}".format(temp_num, temp_den)
+
+    def __sub__(self, other):
+        # (a/b) - (c/d) = (ad - bc) / bd
+        temp_num = self.num * other.den - other.num * self.den
+        temp_den = self.den * other.den 
+        return "{}/{}".format(temp_num, temp_den)
+
+    def __mul__(self, other):
+        # (a/b) * (c/d) = (ac) / (bd)
+        temp_num = self.num * other.num 
+        temp_den = self.den * other.den 
+        return "{}/{}".format(temp_num, temp_den)
+
+    def __truediv__(self, other):
+        # (a/b) / (c/d) = (a*d) / (b*c)
+        temp_num = self.num * other.den 
+        temp_den = self.den * other.num 
+        return "{}/{}".format(temp_num, temp_den)
