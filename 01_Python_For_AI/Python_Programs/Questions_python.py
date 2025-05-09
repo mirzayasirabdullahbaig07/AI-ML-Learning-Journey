@@ -11,26 +11,7 @@
 # ============================
 
 
-# 21. Get the character from ASCII code using `chr()`.
-# 22. Print the memory address of a variable using `id()`.
-# 23. Use f-string to print a sentence with name and age.
-# 24. Check if a float and an int are equal (like 5.0 == 5).
-# 25. Try to add a string and integer (observe error).
 
-
-# ============================
-# 03_Variables_Python (20 problems)
-# ============================
-# 1. Create a variable with your name and print it.
-# 2. Create a variable with your age and print it.
-# 3. Create variables of int, float, and string and print their types.
-# 4. Create a variable and assign it multiple times.
-# 5. Assign the same value to 3 variables in one line.
-# 6. Assign different values to 3 variables in one line.
-# 7. Use augmented assignment (+=) on a number variable.
-# 8. Create two variables and swap their values.
-# 9. Define a variable inside a function and print it.
-# 10. Define a global variable and access it inside a function.
 # 11. Define a local variable inside a function and try to access it outside.
 # 12. Use the `global` keyword to modify a global variable.
 # 13. Create a variable name using a keyword and observe the result.

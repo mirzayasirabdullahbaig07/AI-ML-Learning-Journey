@@ -177,3 +177,97 @@ ascii_value = "Y"
 print(ord(ascii_value))
 
 # Date: 8 May 2025
+
+# 41. Get the character from ASCII code using `chr()`.
+ascii_code = 65
+print(chr(ascii_code))  # Output: 'A'
+
+# 42. Print the memory address of a variable using `id()`.
+memory_of_variable = 12345
+print(id(memory_of_variable))
+
+# 43. Use f-string to print a sentence with name and age.
+f_name = "Mirza Yasir Abdullah Baig"
+f_age = 24
+print(f"My name is {f_name} and my age is {f_age}")
+
+# 44. Check if a float and an int are equal (like 5.0 == 5).
+eql_int = 5
+eql_float = 5.0
+print(eql_int == eql_float)  # Output: True
+
+# 45. Try to add a string and integer (observe error).
+add_str = "Mirza Yasir Abdullah Baig"
+add_int = 24
+# print(add_str + add_int)  # This will cause TypeError
+# Correct way:
+print(add_str + str(add_int))
+
+# ============================
+# 03_Variables_Python (20 problems)
+# ============================
+
+# 46. Create a variable with your name and print it.
+My_name = "Mirza Yasir Abdullah Baig"
+print(My_name)
+
+# 47. Create a variable with your age and print it.
+My_age = 24
+print(My_age)
+
+# 48. Create variables of int, float, and string and print their types.
+f1 = 0.7
+int1 = 7
+str1 = "Mirza Yasir Abdullah Baig"
+print(type(f1))
+print(type(int1))
+print(type(str1))
+
+# 49. Create a variable and assign it multiple times.
+multi_variable = "yasir"
+multi_variable = 7
+multi_variable = 0.7
+multi_variable = False
+multi_variable = 7 + 7j
+print(multi_variable)
+
+# 50. Assign the same value to 3 variables in one line.
+a1 = b1 = c1 = "Yasir"
+print(a1)
+print(b1)
+print(c1)
+
+# 51. Assign different values to 3 variables in one line.
+a2, b2, c2 = 1, 2, 3
+print(a2)
+print(b2)
+print(c2)
+
+# 52. Use augmented assignment (+=) on a number variable.
+plus_var = 7
+plus_var += 1
+print(plus_var)
+
+# 53. Create two variables and swap their values.
+var_1 = "Baig"
+var_2 = "Yasir"
+var_1, var_2 = var_2, var_1
+print(var_1)
+print(var_2)
+
+# 54. Define a variable inside a function and print it.
+def print_name():
+    name = "Yasir"
+    print(name)
+
+print_name()
+
+# 55. Define a global variable and access it inside a function.
+global_var = "I am global"
+
+def access_global():
+    print(global_var)
+
+access_global()
+
+# Date: 9 May 2025
