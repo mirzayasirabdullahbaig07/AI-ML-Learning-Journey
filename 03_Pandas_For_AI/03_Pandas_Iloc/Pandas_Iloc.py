@@ -9,6 +9,11 @@
 # Fetching a Single Column
 # ------------------------------------------------
 
+# import numpy as np
+import pandas as pd
+
+data = pd.read_csv('IPL.csv')
+
 # Let's say we want to extract the 'winner' column from the DataFrame named 'data'.
 
 data['winner']  # This returns a Series

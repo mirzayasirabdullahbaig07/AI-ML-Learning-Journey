@@ -18,7 +18,7 @@
 # Step 2: Upload the CSV file to your working environment (Google Colab, Jupyter Notebook, or VS Code)
 
 # Step 3: Import required libraries
-import numpy as np
+# import numpy as np
 import pandas as pd
 
 # Step 4: Load the dataset using Pandas
