@@ -271,3 +271,15 @@ def access_global():
 access_global()
 
 # Date: 9 May 2025
+
+
+# 11. Define a local variable inside a function and try to access it outside.
+# 12. Use the `global` keyword to modify a global variable.
+# 13. Create a variable name using a keyword and observe the result.
+# 14. Use type hinting to declare a variable.
+# 15. Create a variable and delete it using `del`, then try to print it.
+# 16. Use variables in a math expression.
+# 17. Create a string variable and update it using concatenation.
+# 18. Print all variables from `locals()`.
+# 19. Create a temporary variable using `_` and print it.
+# 20. Use a variable in an f-string to print a message.
