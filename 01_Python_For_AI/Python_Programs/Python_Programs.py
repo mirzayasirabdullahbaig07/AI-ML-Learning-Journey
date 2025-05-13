@@ -274,7 +274,12 @@ access_global()
 
 
 # 11. Define a local variable inside a function and try to access it outside.
+def Globalvariable (a, b):
+    abc = "yasir"
+    return a+ b 
+print(Globalvariable(abc)) # it show the error
 # 12. Use the `global` keyword to modify a global variable.
+
 # 13. Create a variable name using a keyword and observe the result.
 # 14. Use type hinting to declare a variable.
 # 15. Create a variable and delete it using `del`, then try to print it.
