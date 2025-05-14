@@ -273,18 +273,164 @@ access_global()
 # Date: 9 May 2025
 
 
-# 11. Define a local variable inside a function and try to access it outside.
-def Globalvariable (a, b):
-    abc = "yasir"
-    return a+ b 
-print(Globalvariable(abc)) # it show the error
-# 12. Use the `global` keyword to modify a global variable.
+# 56. Define a local variable inside a function and try to access it outside.
+def Globalvariable(a, b):
+    abc = "yasir"  # local variable
+    return a + b
 
-# 13. Create a variable name using a keyword and observe the result.
-# 14. Use type hinting to declare a variable.
-# 15. Create a variable and delete it using `del`, then try to print it.
-# 16. Use variables in a math expression.
-# 17. Create a string variable and update it using concatenation.
-# 18. Print all variables from `locals()`.
-# 19. Create a temporary variable using `_` and print it.
-# 20. Use a variable in an f-string to print a message.
+# Trying to use 'abc' outside the function will cause an error
+# print(abc)  # Uncommenting this will raise: NameError
+print(Globalvariable(3, 5))
+
+# 57. Use the `global` keyword to modify a global variable.
+global_variable = 20
+
+def modify():
+    global global_variable
+    global_variable = 10
+
+modify()
+print(global_variable)  # Output: 10
+
+# 58. Create a variable name using a keyword and observe the result.
+# The following will raise a SyntaxError because 'if' is a reserved keyword
+# if = 10
+# print(if)
+
+# Correct usage:
+if_var = 10
+print(if_var)
+
+# 59. Use type hinting to declare a variable.
+name: str = "Yasir"
+age: int = 24
+height: float = 5.8
+is_student: bool = True
+print(name, age, height, is_student)
+
+# 60. Create a variable and delete it using `del`, then try to print it.
+var_del = "yasir"
+del var_del
+# print(var_del)  # Uncommenting this will raise: NameError
+
+# 61. Use variables in a math expression.
+math_var1 = 2
+math_var2 = 4
+print(math_var1 + math_var2)
+
+# 62. Create a string variable and update it using concatenation.
+str_con = "yasir"
+str_con1 = "Baig"
+str_con = str_con + " " + str_con1
+print(str_con)
+
+# 63. Print all variables from `locals()`.
+print("\nLocal variables:", locals())
+
+# 64. Create a temporary variable using `_` and print it.
+_ = "temporary"
+print(_)
+
+# 65. Use a variable in an f-string to print a message.
+name = "Yasir"
+print(f"Hello, my name is {name} and I love Python!")
+
+# Date 13 May 2025
+
+# 66. Try to create a variable named `if` and observe the error.
+# Invalid — 'if' is a Python keyword and cannot be used as a variable name.
+try:
+    exec("if = 'yasir'")
+except SyntaxError as e:
+    print("Error (66): Cannot use 'if' as a variable name:", e)
+
+# 67. List all keywords in Python using the `keyword` module.
+import keyword
+keywords = keyword.kwlist
+print("Python Keywords:", keywords)
+
+# 68. Create valid variable names using letters and underscores.
+name1 = "yasir"
+_name = "yasir"
+first_name = "yasir"
+name_1 = "yasir"
+print(name1, _name, first_name, name_1)
+
+# 69. Create a variable starting with an underscore and print it.
+_underscore_var = "yasir"
+print(_underscore_var)
+
+# 70. Create a variable with a number in it (not starting with a number).
+var_num1 = 122
+print(var_num1)
+
+# 71. Try to create a variable name that starts with a number (observe the error).
+# Invalid syntax — variable names cannot start with a digit.
+try:
+    exec("1var_num = 12354")
+except SyntaxError as e:
+    print("Error (71): Variable name cannot start with a digit:", e)
+
+# 72. Use camelCase and snake_case naming and print both.
+varCamel = "mirzaYasirAbdullahBaig"
+var_snake = "mirza_yasir_abdullah_baig"
+print(varCamel)
+print(var_snake)
+
+# 73. Check if a string is a valid identifier using `.isidentifier()`.
+valid_identifier = "yasir"
+print("Is valid identifier:", valid_identifier.isidentifier())
+
+# 74. Create a variable name with a special character and observe error.
+# Special characters like @ are not allowed in variable names.
+try:
+    exec("@yasir = 'yasir'")
+except SyntaxError as e:
+    print("Error (74): Variable name cannot contain special characters like '@':", e)
+
+# 75. Explain the difference between `isidentifier()` and `isalpha()` using examples.
+valid_identifier1 = "yasir"
+print("isidentifier():", valid_identifier1.isidentifier())  # True
+valid_isalpha = "yasir"
+print("isalpha():", valid_isalpha.isalpha())  # True
+
+# 76. Create a class with a name using PascalCase and print its type.
+class YasirAbdullah:
+    def __init__(self, name):
+        self.name = name
+obj = YasirAbdullah("yasir")
+print("Type of object:", type(obj))
+
+# 77. Use the `dir()` function to list built-in names in Python.
+print("Built-in names:", dir(__builtins__))
+
+# 78. Try assigning to a keyword and catch the SyntaxError.
+try:
+    exec("else = 'yasir'")
+except SyntaxError as e:
+    print("Error (78): Cannot assign to keyword 'else':", e)
+
+# 79. Demonstrate how identifiers are case-sensitive in Python.
+a = 5
+b = 5
+if a == b:
+    print("a = b")
+else:
+    print("not equal")
+
+# Using 'If' and 'Else' (capitalized) will cause errors.
+try:
+    exec("""
+If a == b:
+    print("a = b")
+Else:
+    print("not equal")
+""")
+except SyntaxError as e:
+    print("Error (79): Python is case-sensitive. Keywords must be lowercase:", e)
+
+# 80. Print a valid identifier that includes numbers but doesn't start with one.
+valid_var = "yasir"
+print(valid_var)
+
+# Date 14 May 2025
