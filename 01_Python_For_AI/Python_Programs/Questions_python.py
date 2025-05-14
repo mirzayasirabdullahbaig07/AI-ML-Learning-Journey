@@ -774,454 +774,242 @@
 
 # 1-20: Data Structures
 # Implement a stack using a list.
-
 # Implement a queue using a list.
-
 # Reverse a list without using the reverse() method.
-
 # Check if a list is a palindrome.
-
 # Find the common elements in two lists.
-
 # Merge two sorted lists into one sorted list.
-
 # Implement a binary search algorithm.
-
 # Implement an algorithm to find the largest number in a list.
-
 # Find the second smallest number in a list.
-
 # Count the frequency of each element in a list.
-
 # Find the intersection of two sets.
-
 # Remove duplicates from a list.
-
 # Write a program to implement a linked list and add elements.
-
 # Convert a list of strings to a single string with commas.
-
 # Find the minimum element in a stack.
-
 # Implement the map() function manually.
-
 # Find the union of two sets.
-
 # Convert a string to a list of characters.
-
 # Check if a string is an anagram of another string.
-
 # Find the missing number in an array from 1 to n.
 
 # 21-40: String Manipulation
 # Reverse a string without using slicing.
-
 # Count the number of vowels in a string.
-
 # Find the longest substring without repeating characters.
-
 # Check if two strings are anagrams.
-
 # Remove all white spaces from a string.
-
 # Find all substrings of a string.
-
 # Convert a string to title case.
-
 # Remove duplicates from a string.
-
 # Count the occurrences of each character in a string.
-
 # Write a function to check if a string is a valid palindrome.
-
 # Convert a string to an integer (without using int()).
-
 # Write a program to check if a string is a valid palindrome using recursion.
-
 # Print the words in a string in reverse order.
-
 # Write a program that prints all the permutations of a string.
-
 # Check if a string is a valid number (integer or float).
-
 # Find the first non-repeated character in a string.
-
 # Replace all occurrences of a substring in a string.
-
 # Count the number of occurrences of a substring in a string.
-
 # Check if a string is a valid email.
-
 # Remove vowels from a string.
 
 # 41-60: Algorithmic Challenges
 # Write a program to sort a list using bubble sort.
-
 # Implement quicksort.
-
 # Implement merge sort.
-
 # Find the prime numbers between 1 and n.
-
 # Write an algorithm to find the greatest common divisor (GCD).
-
 # Find the Fibonacci sequence up to n terms.
-
 # Write an algorithm to check if a number is prime.
-
 # Implement the Sieve of Eratosthenes to find prime numbers.
-
 # Find all divisors of a number.
-
 # Solve the Towers of Hanoi problem.
-
 # Write a program to find the sum of digits of a number.
-
 # Implement binary search.
-
 # Write a function to check if a number is perfect (sum of divisors equals the number).
-
 # Find the factorial of a number using both recursion and iteration.
-
 # Solve the N-th Fibonacci number using dynamic programming.
-
 # Write an algorithm to merge two sorted arrays.
-
 # Find the number of set bits in an integer.
-
 # Check if a number is a palindrome.
-
 # Count the number of trailing zeros in the factorial of a number.
-
 # Write a program to perform matrix multiplication.
 
 # 61-80: Recursion & Dynamic Programming
 # Write a recursive function to calculate the factorial of a number.
-
 # Solve the N-th Fibonacci number using recursion.
-
 # Find the power of a number using recursion.
-
 # Write a recursive program to generate all permutations of a string.
-
 # Implement the Tower of Hanoi problem using recursion.
-
 # Solve the coin change problem using dynamic programming.
-
 # Solve the knapsack problem using dynamic programming.
-
 # Find the longest common subsequence between two strings.
-
 # Write a program to calculate the sum of digits using recursion.
-
 # Solve the subset sum problem using recursion.
-
 # Find the number of ways to reach the top of a staircase with n steps.
-
 # Implement a memoization technique for Fibonacci numbers.
-
 # Solve the problem of counting paths in a grid using recursion.
-
 # Find the maximum sum of a subarray (Kadane’s algorithm).
-
 # Solve the minimum coin change problem using dynamic programming.
-
 # Write a recursive function to print all subsets of a set.
-
 # Solve the longest increasing subsequence problem.
-
 # Find the number of unique paths in a grid.
-
 # Implement the recursive version of quicksort.
-
 # Write a program to calculate the greatest common divisor using recursion.
 
 # 81-100: Object-Oriented Programming (OOP)
 # Define a class for a Car with attributes like model, year, and color.
-
 # Write a Python class to implement a basic calculator.
-
 # Implement inheritance with a Person and Student class.
-
 # Create a class that tracks a bank account with deposit and withdrawal methods.
-
 # Write a class for a Rectangle that computes the area and perimeter.
-
 # Create a class Shape with a method to calculate area (abstract class).
-
 # Define a Book class with attributes for title, author, and ISBN.
-
 # Implement method overloading in a class.
-
 # Create a Circle class with methods to calculate area and circumference.
-
 # Define a class with static methods.
-
 # Write a Python class that simulates a queue.
-
 # Implement polymorphism with method overriding.
-
 # Create a class that tracks the number of instances created.
-
 # Write a program to implement class methods and instance methods.
-
 # Define a class for a Dog that inherits from an Animal class.
-
 # Create a class with class-level variables and instance-level variables.
-
 # Write a Python program that simulates a library system with books.
-
 # Implement a linked list using OOP principles.
-
 # Create a Shape class and derived classes like Circle, Square, etc.
-
 # Implement a basic version of the __str__() method for a class.
 
 # 101-120: Advanced Python Concepts
 # Write a decorator to measure the time a function takes to execute.
-
 # Create a function to memorize the result of previous computations (Memoization).
-
 # Write a program using the with statement for file handling.
-
 # Create a Python generator for Fibonacci numbers.
-
 # Use a context manager to manage resources.
-
 # Implement a custom iterator.
-
 # Write a Python program that uses threading to calculate the sum of a list of numbers.
-
 # Write a decorator that logs the execution time of a function.
-
 # Write a program that demonstrates method chaining.
-
 # Use a regular expression to match an email address.
-
 # Use a regular expression to validate a phone number.
-
 # Create a function that uses *args and **kwargs.
-
 # Implement a binary search tree and traverse it in-order.
-
 # Create a program to flatten a nested list.
-
 # Implement a Python function to validate a Sudoku board.
-
 # Write a function to check if a string is a valid IP address.
-
 # Implement a function that finds all combinations of a list.
-
 # Implement a priority queue using heapq.
-
 # Use the functools module to create a cached function.
-
 # Create a class to simulate a simple ATM system.
 
 # 121-140: File Handling & Miscellaneous
 # Write a program to read from a file and count the number of words.
-
 # Write a program to copy content from one file to another.
-
 # Read a CSV file and print the contents in a structured format.
-
 # Create a function that finds the longest line in a file.
-
 # Write a program to parse a log file and extract error messages.
-
 # Write a program to find the frequency of words in a text file.
-
 # Implement file encryption and decryption in Python.
-
 # Write a program to read from a JSON file and parse it.
-
 # Create a program to track the word frequency from a web page.
-
 # Write a program to append text to an existing file.
-
 # Write a program to read and display the first 10 lines of a file.
-
 # Write a program to write a list of dictionaries into a CSV file.
-
 # Write a function to reverse the contents of a file.
-
 # Write a program to handle exceptions when reading a file.
-
 # Write a program to search for a specific word in a file.
-
 # Create a program that generates a random password.
-
 # Write a program that deletes a specific line from a text file.
-
 # Create a program to convert text to uppercase in a file.
-
 # Write a program to read and write binary data from a file.
-
 # Write a function to check if a file exists before performing operations.
 
 # 141-160: Algorithms & Problem Solving
 # Implement the quicksort algorithm.
-
 # Write a program to find the shortest path in a graph.
-
 # Implement a function to find the longest common prefix.
-
 # Write a program to solve the Sudoku puzzle.
-
 # Create an algorithm to find the intersection of two linked lists.
-
 # Implement an algorithm to detect cycles in a graph.
-
 # Solve the “knapsack problem” using dynamic programming.
-
 # Write a function to find the N-th smallest element in a list.
-
 # Implement an algorithm to generate all possible subsets of a set.
-
 # Write a function to find the first duplicate element in an array.
-
 # Write an algorithm to calculate the number of distinct subsets in an array.
-
 # Implement a function to find the longest increasing subsequence.
-
 # Write a function to find all prime numbers less than n using the Sieve of Eratosthenes.
-
 # Implement a function to merge k sorted lists.
-
 # Solve the “coin change” problem using dynamic programming.
-
 # Write a program to implement depth-first search (DFS) on a graph.
-
 # Write an algorithm to implement breadth-first search (BFS).
-
 # Implement the radix sort algorithm.
-
 # Solve the “minimum spanning tree” problem using Kruskal’s algorithm.
-
 # Write a function to find the median of two sorted arrays.
 
 # 161-180: Advanced OOP & Design Patterns
 # Implement the Singleton design pattern in Python.
-
 # Write the Observer design pattern in Python.
-
 # Implement the Factory design pattern.
-
 # Write a Python program that uses the Decorator pattern.
-
 # Implement the Adapter design pattern.
-
 # Write a Python program to simulate the Command design pattern.
-
 # Create a Python program that uses the Strategy design pattern.
-
 # Implement the Composite design pattern.
-
 # Create a Python program that uses the Proxy design pattern.
-
 # Implement the State design pattern.
-
 # Implement the Chain of Responsibility pattern in Python.
-
 # Write a Python program to simulate the Flyweight design pattern.
-
 # Implement the Builder design pattern.
-
 # Implement the Iterator design pattern in Python.
-
 # Write a Python program to simulate the Mediator design pattern.
-
 # Implement the Memento design pattern in Python.
-
 # Write a program to demonstrate the Abstract Factory design pattern.
-
 # Implement the Bridge design pattern in Python.
-
 # Write a program using the Visitor design pattern.
-
 # Create a program that uses the Interpreter design pattern.
 
 # 181-220: Miscellaneous
 # Create a Python program that simulates an online store.
-
 # Write a Python program to track your expenses.
-
 # Implement a simple to-do list with file handling.
-
 # Write a Python program that calculates the loan payment.
-
 # Write a program to fetch data from a public API.
-
 # Create a Python program that checks the weather using an API.
-
 # Write a Python program that converts temperature units.
-
 # Implement a text-based game in Python.
-
 # Write a Python program to calculate compound interest.
-
 # Create a simple chatbot using Python.
-
 # Write a Python program to implement a basic version of a calendar.
-
 # Write a Python program to calculate the area and perimeter of geometric shapes.
-
 # Create a program that simulates a basic ATM machine.
-
 # Implement a password manager in Python.
-
 # Create a Python program to monitor system memory usage.
-
 # Implement a Python program for image processing.
-
 # Write a Python program to create a random number generator.
-
 # Implement a Python program to simulate a dice roll.
-
 # Create a Python program that generates random jokes.
-
 # Write a Python program to check if a string is a valid date.
-
 # Create a program that converts decimal numbers to binary.
-
 # Write a Python program to implement an elevator system.
-
 # Create a Python program to calculate the distance between two points.
-
 # Write a Python program to implement a stopwatch.
-
 # Create a Python program that generates QR codes.
-
 # Write a Python program that checks if a year is a leap year.
-
 # Implement a Python program to sort files in a directory.
-
 # Write a Python program to split and join a string.
-
 # Create a Python program that validates a password.
-
 # Implement a Python program that finds the shortest word in a sentence.
-
 # Write a program to find the largest prime factor of a number.
-
 # Implement a Python program to find the Fibonacci sequence.
-
 # Write a program to implement binary search on a sorted array.
-
 # Create a Python program to find the LCM of two numbers.
 
-# Here are 6 more problems to round things off:
-
+# Additional Problems (221-226)
 # Decorators: Write a decorator function that logs the arguments and the result of the function it decorates.
-
 # List Comprehension: Create a list comprehension that generates the squares of numbers from 1 to 20 and filters out the numbers greater than 50.
-
 # File Handling: Write a program that opens a text file and counts the number of occurrences of the word "Python".
-
 # Exceptions: Write a program that takes two integers from the user and divides them, handling the case where the user enters zero or a non-integer input.
-
 # Prime Number Checker: Write a function that checks if a number is prime, and then use it to print all prime numbers from 1 to 100.
-
 # Reverse String: Write a program that reverses a string using recursion.
-
-# Now you have 226 problems to help you build your Python expertise!
