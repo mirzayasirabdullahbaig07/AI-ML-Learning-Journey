@@ -1,143 +1,190 @@
-# what is oop?
-# OOP is object oriented programming
-# it is different style of writing code
-# why oop is necessary?
-# it is very practical concepts
-# in python everything is object
-# the problem before learning oop
-# generality to specificity
-# in oop u can create ur own datatypes, encapusication, abstraction, ploymorsim
-# object, class, abstraction, ploymorsim, encapsulation, inheritance
-# what is class?
-# class is the blueprint, and object is always of some class
-# e.g a mouse which is object of so many mouses
-# i am an object of man, city of something
+# ---------------------------------------------
+#  What is OOP?
+# ---------------------------------------------
 
-# object of which class?
-a = "yasir"
-print(type(a))
-# the class take more code than an object takes during creation
+# OOP stands for Object-Oriented Programming.
+# It is a programming paradigm based on the concept of "objects".
+# OOP allows us to structure code in a way that models real-world entities more intuitively.
 
-# class contain two things
-# data/property and the other is function/behaviour
+# ---------------------------------------------
+#  Why is OOP necessary?
+# ---------------------------------------------
 
-# example: car is class, data of this class is no. of wheels. color
-# functionality: bags, calculate milage, gps navigation
+#  More realistic and practical design
+#  Makes code reusable through inheritance
+#  Improves code readability and organization
+#  Allows creation of custom data types (classes)
+#  Encourages encapsulation and abstraction
+#  Supports polymorphism — different behaviors using the same interface
 
+# In Python, everything is treated as an object, which makes it naturally aligned with OOP.
 
-# how class looks like in python
+# ---------------------------------------------
+# Core OOP Concepts:
+# ---------------------------------------------
+# 1. Class
+# 2. Object
+# 3. Encapsulation
+# 4. Abstraction
+# 5. Inheritance
+# 6. Polymorphism
 
-# class car:
+# ---------------------------------------------
+# What is a Class?
+# ---------------------------------------------
+
+# A class is a blueprint or template for creating objects.
+# It defines properties (attributes/data) and behaviors (methods/functions) of the object.
+
+# Example: A Car class
+# - Attributes: color, model, engine_type
+# - Methods: start(), stop(), calculate_mileage()
+
+# Code Example:
+# class Car:
 #     color = "blue"
 #     model = "sports"
-#     def calculate_milage(km, time):
-#         # some code
+#     def calculate_mileage(km, time):
+#         # some logic here
 
-# class name should be pascal case variable and function name must be snake_case
-# what are pascal case : MirzaYasirAbdullahBaig
-# camel case: mirzaYasirAbdullahBaig
-# snake case: mirza_yasir_abdullah_baig
+# Naming Conventions:
+# - Class names: PascalCase → e.g., `CarModel`, `BankAccount`
+# - Variable and method names: snake_case → e.g., `calculate_mileage`
 
-# class name-
-# attribute - color, model -
+# Examples of Naming Styles:
+# - PascalCase: MirzaYasirAbdullahBaig
+# - camelCase: mirzaYasirAbdullahBaig
+# - snake_case: mirza_yasir_abdullah_baig
 
-# methods - gps, airbag + 
-# the method which show with plus are always public
-# the data which show with - are mostly private
+# ---------------------------------------------
+# What is an Object?
+# ---------------------------------------------
 
-# Object examples
-# Car --- wagorR --- Object name = class name --wagorR = Car()
-# Sports --- cricket --- Object name = class name --cricket = Sports()    
-# Animal --- Lion --- Object name = class name --Lion = Animal()
+# An object is an instance of a class.
+# It has its own copy of the class's attributes and can access class methods.
 
-# What are object literal
-# easy way to make objects
-# these are builtinclass
+# Examples:
+# Car → WagonR → wagonr = Car()
+# Sports → Cricket → cricket = Sports()
+# Animal → Lion → lion = Animal()
 
-list1 = [1,2,3,4,5]
-list2 = list() # focus on syntax object name --- class name()
-print(list2) 
+# ---------------------------------------------
+# Object Literals
+# ---------------------------------------------
 
-# ATM Machine Software in OOP
+# These are built-in object types in Python like list, dict, str, etc.
+# We can create their objects in two ways:
+list1 = [1, 2, 3]           # Literal method
+list2 = list()              # Using class constructor
+print(list2)
 
+# ---------------------------------------------
+# Functions vs Methods
+# ---------------------------------------------
 
-    # function vs methods
-# Methods are basically functions which are written inside a class
-# function is the normal function, which is not in any class
+# Function: A block of code that performs a task, defined using `def`.
+# Method: A function defined inside a class and used on its objects.
 
+# Example:
+list3 = [1, 2, 3]
+print(len(list3))           # len() is a function
+list3.append(4)             # append() is a method (defined in list class)
 
-# list3 = [1,2,3,4,5,6]
-# print(len(list3))  # this is a function 
-# list3.append(11) # this is a method, which means this function actually defined in the list class
-# print(list3)
+# ---------------------------------------------
+# What is a Constructor?
+# ---------------------------------------------
 
-# what is constructor
-# __init__is a constructor
-# constructor is a special function, which is defined inside a class(__init__) the inner code automatically excute when u create the object of the{ atm }class
-# dunder method, special method, magic method
+# A constructor is a special method in Python used to initialize objects.
+# In Python, it's defined using `__init__()` — also known as:
+# - Dunder method
+# - Special method
+# - Magic method
 
-# there are so many magic method
+# The constructor is automatically called when an object of the class is created.
+
+# Example:
+# class ATM:
+#     def __init__(self):
+#         print("ATM initialized")
+
+# atm = ATM()  # This automatically calls __init__
+
+# ---------------------------------------------
+# Summary
+# ---------------------------------------------
+
+# - OOP helps model real-world behavior in code
+# - Classes define the blueprint
+# - Objects are instances of classes
+# - Methods perform actions; attributes hold data
+# - Constructors initialize object state
+# - Python supports all key OOP features
+
+# Now you’re ready to design scalable and organized software using Object-Oriented Programming!
 
 class Atm:
     def __init__(self):
         self.pin = ""
         self.balance = 0
-        self.menu()
+        self.main_menu()
 
-    def menu(self):
+    def main_menu(self):
         user_input = input("""
-How would you like to proceed?
-1- Create PIN
-2- Deposit
-3- Withdraw
-4- Check Balance
-5- Exit
-""")
+Welcome to the ATM System.
+Please select an option:
+1 - Set your PIN
+2 - Make a Deposit
+3 - Make a Withdrawal
+4 - View Balance
+5 - Exit
+Enter your choice: """)
         if user_input == "1":
-            self.create_pin()
+            self.set_pin()
         elif user_input == "2":
-            self.deposit()
+            self.add_funds()
         elif user_input == "3":
-            self.withdraw()
+            self.take_cash()
         elif user_input == "4":
-            self.check_balance()
+            self.view_balance()
         else:
-            print("Bye")
+            print("Thank you for using our ATM. Have a great day!")
 
-    def create_pin(self):
-        self.pin = input("Enter Your PIN: ")
-        print("PIN Set Successfully")
+    def set_pin(self):
+        self.pin = input("Please enter a new PIN: ")
+        print("Your PIN has been successfully created.")
 
-    def deposit(self):
-        temp = input("Enter Your PIN: ")
-        if temp == self.pin:
-            amount = int(input("Enter the amount: "))
+    def add_funds(self):
+        entered_pin = input("Enter your PIN to continue: ")
+        if entered_pin == self.pin:
+            amount = int(input("Enter the amount to deposit: "))
             self.balance += amount
-            print("Deposit Successful")
+            print(f"{amount} has been added to your account.")
         else:
-            print("Invalid PIN")
+            print("Incorrect PIN. Access denied.")
 
-    def withdraw(self):
-        temp = input("Enter Your PIN: ")
-        if temp == self.pin:
-            amount = int(input("Enter the amount: "))
+    def take_cash(self):
+        entered_pin = input("Enter your PIN to continue: ")
+        if entered_pin == self.pin:
+            amount = int(input("Enter the amount to withdraw: "))
             if amount <= self.balance:
                 self.balance -= amount
-                print("Withdrawal Successful")
+                print(f"Withdrawal of {amount} completed successfully.")
             else:
-                print("Insufficient Funds")
+                print("Insufficient balance.")
         else:
-            print("Invalid PIN")
+            print("Incorrect PIN. Access denied.")
 
-    def check_balance(self):
-        temp = input("Enter Your PIN: ")
-        if temp == self.pin:
-            print("Your balance is:", self.balance)
+    def view_balance(self):
+        entered_pin = input("Enter your PIN to check your balance: ")
+        if entered_pin == self.pin:
+            print(f"Your current balance is: {self.balance}")
         else:
-            print("Invalid PIN")
+            print("Incorrect PIN. Access denied.")
 
-# Create ATM object to start
+# Start the ATM session
 atm = Atm()
+
+
 
 
 # What is 'self' in Python OOP?
@@ -182,3 +229,113 @@ class Fraction:
         temp_num = self.num * other.den 
         temp_den = self.den * other.num 
         return "{}/{}".format(temp_num, temp_den)
+    
+
+# ---------------------------------------------
+# Encapsulation in Object-Oriented Programming (OOP)
+# ---------------------------------------------
+
+# What is an instance variable?
+# Instance variables are variables defined inside the constructor (`__init__` method).
+# These variables hold data unique to each object (instance) of the class.
+# Examples: `pin`, `balance` — each object (ATM user) has its own values for these.
+
+# Problem:
+# By default, object attributes are accessible and modifiable from outside the class.
+# This can lead to accidental or malicious changes — e.g., someone could change the balance to a string like "abc", which breaks the logic.
+
+# Solution: Encapsulation
+# Encapsulation is the process of hiding sensitive data to prevent unauthorized access.
+# In Python, we achieve this by making attributes private using double underscores:
+#   Example: self.__pin, self.__balance
+# While Python does not enforce true privacy, this naming convention protects the variables from direct access.
+
+# We expose such private variables using:
+# - Getter methods (to read values)
+# - Setter methods (to update values safely with validation)
+
+# ---------------------------------------------
+class Atm:
+    def __init__(self):
+        self.__pin = ""         # private attribute
+        self.__balance = 0      # private attribute
+        self.menu()
+    
+    # Getter for pin
+    def get_pin(self):
+        return self.__pin
+
+    # Setter for pin with validation
+    def set_pin(self, new_pin):
+        if type(new_pin) == str:
+            self.__pin = new_pin
+            print("PIN changed successfully")
+        else:
+            print("Invalid PIN format. Must be a string.")
+
+    # User menu
+    def menu(self):
+        user_input = input("""
+How would you like to proceed?
+1- Create PIN
+2- Deposit
+3- Withdraw
+4- Check Balance
+5- Exit
+""")
+        if user_input == "1":
+            self.create_pin()
+        elif user_input == "2":
+            self.deposit()
+        elif user_input == "3":
+            self.withdraw()
+        elif user_input == "4":
+            self.check_balance()
+        else:
+            print("Goodbye!")
+
+    # Create PIN
+    def create_pin(self):
+        self.__pin = input("Enter your new PIN: ")
+        print("PIN set successfully")
+
+    # Deposit amount
+    def deposit(self):
+        temp = input("Enter your PIN: ")
+        if temp == self.__pin:
+            amount = int(input("Enter the amount to deposit: "))
+            self.__balance += amount
+            print("Deposit successful")
+        else:
+            print("Invalid PIN")
+
+    # Withdraw amount
+    def withdraw(self):
+        temp = input("Enter your PIN: ")
+        if temp == self.__pin:
+            amount = int(input("Enter the amount to withdraw: "))
+            if amount <= self.__balance:
+                self.__balance -= amount
+                print("Withdrawal successful")
+            else:
+                print("Insufficient funds")
+        else:
+            print("Invalid PIN")
+
+    # Check balance
+    def check_balance(self):
+        temp = input("Enter your PIN: ")
+        if temp == self.__pin:
+            print("Your balance is:", self.__balance)
+        else:
+            print("Invalid PIN")
+
+# ---------------------------------------------
+# Create ATM object to start the program
+atm = Atm()
+
+# Summary of Concepts Used:
+# - Need for Encapsulation
+# - Private attributes (__pin, __balance)
+# - Getter and Setter methods
+# - Class structure and user interaction
