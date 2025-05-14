@@ -335,7 +335,7 @@ print(_)
 name = "Yasir"
 print(f"Hello, my name is {name} and I love Python!")
 
-# Date 13 May 2025
+# Date 12 May 2025
 
 # 66. Try to create a variable named `if` and observe the error.
 # Invalid — 'if' is a Python keyword and cannot be used as a variable name.
@@ -433,4 +433,54 @@ except SyntaxError as e:
 valid_var = "yasir"
 print(valid_var)
 
+# Date 13 May 2025
+
+
+# 81. Take user input for name and print a greeting.
+greeting_input = input("Enter your name: ")
+print("Hello, " + greeting_input + "!")
+
+# 82. Take two numbers as input and print their sum.
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+print("Sum:", num1 + num2)
+
+# 83. Take input and check its type.
+input_checker = input("Enter something: ")
+print("Data type:", type(input_checker))
+
+# 84. Take a float input and convert it to int.
+float_input = float(input("Enter a float number: "))
+print("Integer:", int(float_input))
+
+# 85. Take an int input and convert it to float.
+int_input = int(input("Enter an integer: "))
+print("Float:", float(int_input))
+
+# 86. Take string input and convert to list of characters.
+string_input = input("Enter a string: ")
+print("List of characters:", list(string_input))
+
+# 87. Take age as input and print "Adult" or "Minor".
+person_age = int(input("Enter your age: "))
+if person_age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+# 88. Take two inputs and swap their values.
+a = input("Enter first value (a): ")
+b = input("Enter second value (b): ")
+a, b = b, a
+print("After swapping: a =", a, ", b =", b)
+
+# 89. Take a number and convert it to binary.
+num_binary = int(input("Enter a number: "))
+print("Binary:", bin(num_binary))
+
+# 90. Take a number and convert it to octal.
+num_octal = int(input("Enter a number: "))
+print("Octal:", oct(num_octal))
+
 # Date 14 May 2025
+

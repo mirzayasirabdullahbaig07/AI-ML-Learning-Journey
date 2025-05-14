@@ -12,37 +12,6 @@
 
 
 
-# 11. Define a local variable inside a function and try to access it outside.
-# 12. Use the `global` keyword to modify a global variable.
-# 13. Create a variable name using a keyword and observe the result.
-# 14. Use type hinting to declare a variable.
-# 15. Create a variable and delete it using `del`, then try to print it.
-# 16. Use variables in a math expression.
-# 17. Create a string variable and update it using concatenation.
-# 18. Print all variables from `locals()`.
-# 19. Create a temporary variable using `_` and print it.
-# 20. Use a variable in an f-string to print a message.
-
-
-# ============================
-# 04_Keyword_Identifier_Python (15 problems)
-# ============================
-# 1. Try to create a variable named `if` and observe the error.
-# 2. List all keywords in Python using the `keyword` module.
-# 3. Create valid variable names using letters and underscores.
-# 4. Create a variable starting with an underscore and print it.
-# 5. Create a variable with a number in it (not starting with a number).
-# 6. Try to create a variable name that starts with a number (observe the error).
-# 7. Use camelCase and snake_case naming and print both.
-# 8. Check if a string is a valid identifier using `.isidentifier()`.
-# 9. Create a variable name with a special character and observe error.
-# 10. Explain the difference between `isidentifier()` and `isalpha()` using examples.
-# 11. Create a class with a name using PascalCase and print its type.
-# 12. Use the `dir()` function to list built-in names in Python.
-# 13. Try assigning to a keyword and catch the SyntaxError.
-# 14. Demonstrate how identifiers are case-sensitive in Python.
-# 15. Print a valid identifier that includes numbers but doesn't start with one.
-
 
 
 # 1. Take user input for name and print a greeting.
