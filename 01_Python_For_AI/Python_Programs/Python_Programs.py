@@ -484,3 +484,66 @@ print("Octal:", oct(num_octal))
 
 # Date 14 May 2025
 
+
+# 91. Take a number and convert it to hexadecimal.
+num_hexa = int(input("Enter your number: "))
+print("Hexadecimal:", hex(num_hexa))
+
+# 92. Take name and age from user and print formatted sentence using f-string.
+user_name = input("Enter your name: ")
+user_age = int(input("Enter your age: "))
+print(f"The person's name is {user_name} and the age is {user_age}.")
+
+# 93. Take height and weight from user and calculate BMI.
+patient_height = float(input("Tell me your height in meters: "))
+patient_weight = float(input("Tell me your weight in kilograms: "))
+bmi = patient_weight / (patient_height ** 2)
+print(f"The patient's BMI is: {bmi:.2f}")
+
+# 94. Take temperature in Celsius and convert to Fahrenheit.
+celsius = float(input("Enter the temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print(f"{celsius}°C is equal to {fahrenheit:.2f}°F")
+
+# 95. Take hours and rate/hour and calculate total salary.
+total_hours = float(input("Enter total hours worked: "))
+rate_hour = float(input("Enter the rate per hour: "))
+total_salary = total_hours * rate_hour
+print(f"Total salary is: {total_salary:.2f}")
+
+# 96. Take marks in 5 subjects and print the average.
+mark1 = float(input("Enter Maths marks: "))
+mark2 = float(input("Enter English marks: "))
+mark3 = float(input("Enter Physics marks: "))
+mark4 = float(input("Enter Chemistry marks: "))
+mark5 = float(input("Enter Biology marks: "))
+total_marks = mark1 + mark2 + mark3 + mark4 + mark5
+average_of_student = total_marks / 5
+print(f"Average marks: {average_of_student:.2f}")
+
+# 97. Take a number and check if it is even or odd.
+number_checker = int(input("Enter the number: "))
+if number_checker % 2 == 0:
+    print("It is even.")
+else:
+    print("It is odd.")
+
+# 98. Ask user to enter a password and mask it (just simulate masking).
+password = input("Enter your password: ")
+masked_password = '*' * len(password)
+print(f"Your password is: {masked_password}")
+
+# 99. Take date of birth and calculate current age (hardcode current year).
+hardcode_year = 2025
+birth_year = int(input("Enter your birth year: "))
+current_age = hardcode_year - birth_year
+print(f"Your age is: {current_age} years.")
+
+# 100. Ask user a yes/no question and convert response to lowercase.
+response = input("Do you want to continue? (yes/no): ")
+response_lower = response.lower()
+print(f"Your response in lowercase: {response_lower}")
+
+# Date 15 May 2025
+
+

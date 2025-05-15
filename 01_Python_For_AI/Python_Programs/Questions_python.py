@@ -10,30 +10,6 @@
 # 02_Datatypes_Func_Python (25 problems)
 # ============================
 
-
-
-
-
-# 1. Take user input for name and print a greeting.
-# 2. Take two numbers as input and print their sum.
-# 3. Take input and check its type.
-# 4. Take a float input and convert it to int.
-# 5. Take an int input and convert it to float.
-# 6. Take string input and convert to list of characters.
-# 7. Take age as input and print "Adult" or "Minor".
-# 8. Take two inputs and swap their values.
-# 9. Take a number and convert it to binary.
-# 10. Take a number and convert it to octal.
-# 11. Take a number and convert it to hexadecimal.
-# 12. Take name and age from user and print formatted sentence using f-string.
-# 13. Take height and weight from user and calculate BMI.
-# 14. Take temperature in Celsius and convert to Fahrenheit.
-# 15. Take hours and rate/hour and calculate total salary.
-# 16. Take marks in 5 subjects and print the average.
-# 17. Take a number and check if it is even or odd.
-# 18. Ask user to enter a password and mask it (just simulate masking).
-# 19. Take date of birth and calculate current age (hardcode current year).
-# 20. Ask user a yes/no question and convert response to lowercase.
 # 21. Input a number and round it to 2 decimal places.
 # 22. Ask for a number and print its square and cube.
 # 23. Input a sentence and count how many words it has.
