@@ -546,4 +546,70 @@ print(f"Your response in lowercase: {response_lower}")
 
 # Date 15 May 2025
 
+# 101. Input a number and round it to 2 decimal places.
+round_num = float(input("enter a number"))
+print(round(round_num, 2))
 
+# 102. Ask for a number and print its square and cube.
+nums = int(input("Enter a number: "))
+print("Square:", nums ** 2)
+print("Cube:", nums ** 3)
+
+# 103. Input a sentence and count how many words it has.
+input_sentence = input("enter the sentence")
+wordss = input_sentence.split()
+print(wordss)
+
+# 104. Take a single character input and print its ASCII value.
+char = input("Enter a single character: ")
+if len(char) == 1:
+    print("ASCII value:", ord(char))
+else:
+    print("Please enter only one character.")
+
+# 105. Convert a string input to boolean.
+str_boolean = "yasir"
+print(bool(str_boolean))
+
+# 106. Take a number and check if it is positive, negative or zero.
+num_check = int(input("enter the number"))
+if num_check == 0:
+    print("it is zero")
+elif num_check > 0:
+    print("it is positive")
+else:
+    print("number is negative")
+
+# 107. Ask for a number and convert it to float safely using try-except.
+try:
+    num = input("Enter a number: ")
+    float_num = float(num)
+    print("Converted to float:", float_num)
+except ValueError:
+    print("Invalid input! Please enter a valid number.")
+
+# 108. Take an integer input and print all digits separately.
+number = input("Enter a number: ")
+for digit in number:
+    print(digit)
+
+# 109. Ask for a full name and print the initials.
+full_name = input("Enter your full name: ").strip()
+words = full_name.split()
+initials = ""
+for word in words:
+    initials += word[0].upper()  # Take first letter and capitalize it
+print("Initials:", initials)
+
+# 110. Input a value and check whether it's digit, alpha, or alphanumeric.
+value = input("Enter a value: ")
+if value.isdigit():
+    print("The value is all digits.")
+elif value.isalpha():
+    print("The value is all alphabetic.")
+elif value.isalnum():
+    print("The value is alphanumeric.")
+else:
+    print("The value contains special characters or spaces.")
+
+# 16 May 2025
