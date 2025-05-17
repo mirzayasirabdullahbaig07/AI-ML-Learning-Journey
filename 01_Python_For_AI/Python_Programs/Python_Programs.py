@@ -611,5 +611,4 @@ elif value.isalnum():
     print("The value is alphanumeric.")
 else:
     print("The value contains special characters or spaces.")
-
 # 16 May 2025
