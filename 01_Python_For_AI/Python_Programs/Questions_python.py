@@ -10,18 +10,6 @@
 # 02_Datatypes_Func_Python (25 problems)
 # ============================
 
-# 21. Input a number and round it to 2 decimal places.
-# 22. Ask for a number and print its square and cube.
-# 23. Input a sentence and count how many words it has.
-# 24. Take a single character input and print its ASCII value.
-# 25. Convert a string input to boolean.
-# 26. Take a number and check if it is positive, negative or zero.
-# 27. Ask for a number and convert it to float safely using try-except.
-# 28. Take an integer input and print all digits separately.
-# 29. Ask for a full name and print the initials.
-# 30. Input a value and check whether it's digit, alpha, or alphanumeric.
-
-
 # 1. Print the string literal "Hello, World!".
 # 2. Define a string literal and print its type.
 # 3. Define a float literal and print it.

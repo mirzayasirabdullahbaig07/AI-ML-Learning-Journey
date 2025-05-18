@@ -611,4 +611,67 @@ elif value.isalnum():
     print("The value is alphanumeric.")
 else:
     print("The value contains special characters or spaces.")
+
 # 16 May 2025
+
+# 111. Print the string literal "Hello, World!".
+print("Hello, World")
+
+# 112. Define a string literal and print its type.
+string_literal = "This is string literal"
+print(type(string_literal))
+
+# 113. Define a float literal and print it.
+float_literal = 0.7
+print(float_literal)
+
+# 114. Define an integer literal and print it.
+int_literal = 12345
+print(int_literal)
+
+# 115. Define a boolean literal and print it.
+boolean_literal = True
+print(boolean_literal)
+
+# 116. Define a complex number literal and print its real and imaginary parts.
+complex_number = 2 + 2j
+print("Real part:", complex_number.real)
+print("Imaginary part:", complex_number.imag)
+
+# 117. Print a list literal containing 3 integers.
+list_literal = [1, 2, 3]
+print(list_literal)
+
+# 118. Define and print a tuple literal containing 3 different data types.
+tuple_literal = (1, "hello", 3.14)
+print(tuple_literal)
+
+# 119. Define a set literal containing 5 unique elements.
+set_literals = {"yasir", "abdullah", 23, True, False} 
+print(set_literals)
+
+# 120. Define a dictionary literal with 3 key-value pairs and print it.
+dictionary_literals = {"name": "yasir", "fullname": "abdullah", "age": 23} 
+print(dictionary_literals)
+
+# 121. Print a string literal containing escape characters like \n, \t.
+str_escape = "This is a string with escape characters:\nNew Line\tTabbed Text"
+print(str_escape)
+
+# 122. Define a multi-line string literal and print it.
+multi_line_string = """My name is Yasir and I am a machine learning engineer.
+My age is 24.
+I want to do a job."""
+print(multi_line_string)
+
+# 18 May 2025
+
+
+# 13. Define an integer literal with an underscore to make it more readable (e.g., 1_000_000).
+# 14. Convert a binary literal (e.g., 0b101) to decimal and print it.
+# 15. Convert an octal literal (e.g., 0o15) to decimal and print it.
+# 16. Convert a hexadecimal literal (e.g., 0x1F) to decimal and print it.
+# 17. Use a floating-point literal with scientific notation (e.g., 1e3) and print it.
+# 18. Use a boolean literal in an if statement and print a message based on its value.
+# 19. Demonstrate an invalid literal error by trying to create an incorrect literal.
+# 20. Print a string literal with special characters inside (like quotes inside a string).
