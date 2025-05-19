@@ -667,11 +667,110 @@ print(multi_line_string)
 # 18 May 2025
 
 
-# 13. Define an integer literal with an underscore to make it more readable (e.g., 1_000_000).
-# 14. Convert a binary literal (e.g., 0b101) to decimal and print it.
-# 15. Convert an octal literal (e.g., 0o15) to decimal and print it.
-# 16. Convert a hexadecimal literal (e.g., 0x1F) to decimal and print it.
-# 17. Use a floating-point literal with scientific notation (e.g., 1e3) and print it.
-# 18. Use a boolean literal in an if statement and print a message based on its value.
-# 19. Demonstrate an invalid literal error by trying to create an incorrect literal.
-# 20. Print a string literal with special characters inside (like quotes inside a string).
+# Reference Variables and Pass by Reference in Python
+
+# 123. Reference Variable
+# When you create an object and do not store it in a variable,
+# you cannot access it later. It's created in memory but inaccessible.
+
+atm = Atm()  # Object created and stored in 'atm'
+
+# 124. Pass by Reference with Class Object
+class Customer:
+    def __init__(self, name, gender):
+        self.name = name
+        self.gender = gender
+
+def greet(customer):
+    if customer.gender == "Male":
+        print("Hello", customer.name, "sir")
+    else:
+        print("Hello", customer.name, "mam")
+    cust2 = Customer("Baig", "Male")
+    return cust2
+
+cust = Customer("Mirza", "Male")
+new_cust = greet(cust)
+print(new_cust.name)
+
+# When you pass a class object to a function,
+# the parameter becomes a reference to the same object.
+# So both 'customer' and 'cust' refer to the same object in memory.
+
+# In Python, everything is an object.
+# You can pass lists, sets, dicts, strings, and even custom class objects to functions.
+
+# 125. Object Mutability
+class Customer:
+    def __init__(self, name):
+        self.name = name
+
+def greet(customer):
+    print("ID inside function before change:", id(customer))
+    customer.name = "Yasir"  # Changes the original object
+    print("Name inside function:", customer.name)
+    print("ID inside function after change:", id(customer))
+
+cust = Customer("Mirza")
+print("ID before function call:", id(cust))
+greet(cust)
+print("Name after function call:", cust.name)
+
+# Output:
+# ID remains the same throughout, showing that the object is mutable
+# The name is changed to 'Yasir', reflecting the change outside the function
+
+# 126. List Mutability and ID Check
+
+def change(L):
+    print("ID inside function:", id(L))
+    L.append(5)
+
+L1 = [1, 2, 3, 4]
+print("ID before function call:", id(L1))
+print("List before function call:", L1)
+
+change(L1[:])  # Pass a copy of the list (cloning)
+# Permanent change is avoided due to cloning
+
+print("List after function call:", L1)
+
+# 127. Define an integer literal with an underscore to make it more readable
+int_underscore = 1_00_0000
+print("127:", int_underscore)
+
+# 128. Convert a binary literal (e.g., 0b101) to decimal and print it
+binary_literal = 0b101
+print("128:", int(binary_literal))
+
+# 129. Convert an octal literal (e.g., 0o15) to decimal and print it
+octal_literal = 0o15
+print("129:", int(octal_literal))
+
+# 130. Convert a hexadecimal literal (e.g., 0x1F) to decimal and print it
+hex_literal = 0x1F
+print("130:", int(hex_literal))
+
+# 131. Use a floating-point literal with scientific notation (e.g., 1e3) and print it
+sci_notation = 1e3
+print("131:", sci_notation)
+
+# 132. Use a boolean literal in an if statement and print a message based on its value
+flag = True
+if flag:
+    print("132: Flag is True")
+else:
+    print("132: Flag is False")
+
+# 133. Demonstrate an invalid literal error by trying to create an incorrect literal
+# Uncommenting the below line will raise a ValueError
+# invalid = int("abc")
+# print("133:", invalid)
+
+# 134. Print a string literal with special characters inside (like quotes inside a string)
+quote_str = "He said, \"Python is awesome!\""
+print("134:", quote_str)
+
+# 135. Use complex numbers and print real and imaginary parts
+complex_num = 4 + 5j
+print("135: Real part:", complex_num.real, ", Imaginary part:", complex_num.imag)
