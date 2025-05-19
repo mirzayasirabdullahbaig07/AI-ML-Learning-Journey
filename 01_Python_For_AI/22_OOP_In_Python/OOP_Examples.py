@@ -339,3 +339,80 @@ atm = Atm()
 # - Private attributes (__pin, __balance)
 # - Getter and Setter methods
 # - Class structure and user interaction
+
+
+# Reference Variables and Pass by Reference in Python
+
+# Example 1: Reference Variable
+# When you create an object and do not store it in a variable,
+# you cannot access it later. It's created in memory but inaccessible.
+
+atm = Atm()  # Object created and stored in 'atm'
+
+# Example 2: Pass by Reference with Class Object
+class Customer:
+    def __init__(self, name, gender):
+        self.name = name
+        self.gender = gender
+
+def greet(customer):
+    if customer.gender == "Male":
+        print("Hello", customer.name, "sir")
+    else:
+        print("Hello", customer.name, "mam")
+    cust2 = Customer("Baig", "Male")
+    return cust2
+
+cust = Customer("Mirza", "Male")
+new_cust = greet(cust)
+print(new_cust.name)
+
+# When you pass a class object to a function,
+# the parameter becomes a reference to the same object.
+# So both 'customer' and 'cust' refer to the same object in memory.
+
+# In Python, everything is an object.
+# You can pass lists, sets, dicts, strings, and even custom class objects to functions.
+
+# Example 3: Object Mutability
+class Customer:
+    def __init__(self, name):
+        self.name = name
+
+def greet(customer):
+    print("ID inside function before change:", id(customer))
+    customer.name = "Yasir"  # Changes the original object
+    print("Name inside function:", customer.name)
+    print("ID inside function after change:", id(customer))
+
+cust = Customer("Mirza")
+print("ID before function call:", id(cust))
+greet(cust)
+print("Name after function call:", cust.name)
+
+# Output:
+# ID remains the same throughout, showing that the object is mutable
+# The name is changed to 'Yasir', reflecting the change outside the function
+
+# Example 4: List Mutability and ID Check
+
+def change(L):
+    print("ID inside function:", id(L))
+    L.append(5)
+
+L1 = [1, 2, 3, 4]
+print("ID before function call:", id(L1))
+print("List before function call:", L1)
+
+change(L1[:])  # Pass a copy of the list (cloning)
+# Permanent change is avoided due to cloning
+
+print("List after function call:", L1)
+
+
+
+
+ 
+
+
+
