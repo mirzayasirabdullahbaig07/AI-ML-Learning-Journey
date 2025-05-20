@@ -255,17 +255,45 @@ class Fraction:
 # - Setter methods (to update values safely with validation)
 
 # ---------------------------------------------
+# -----------------------------
+# Static and Instance Variables
+# -----------------------------
+
+# Instance Variable: A variable that is unique to each instance (object) of a class.
+# Static (Class) Variable: A variable that is shared among all instances of a class.
+# Static variables are defined outside the constructor (inside the class, but outside __init__).
+# -----------------------------
+
 class Atm:
+    __counter = 1  # Static (class) variable — same for all objects
+
     def __init__(self):
-        self.__pin = ""         # private attribute
-        self.__balance = 0      # private attribute
+        # Instance variables (unique to each object)
+        self.__pin = ""         # Private attribute
+        self.__balance = 0      # Private attribute
+        self.no = Atm.__counter  # Assigning current counter value to object
+        Atm.__counter += 1       # Incrementing static counter
         self.menu()
-    
-    # Getter for pin
+
+    # -----------------------------
+    # Static Method to Set Counter
+    # -----------------------------
+    @staticmethod
+    def set__counter(new):  # Corrected parameter name (was 'self' mistakenly)
+        if type(new) == int:
+            Atm.__counter = new
+        else:
+            print("Not Allowed")
+
+    # -----------------------------
+    # Getter for PIN
+    # -----------------------------
     def get_pin(self):
         return self.__pin
 
-    # Setter for pin with validation
+    # -----------------------------
+    # Setter for PIN with validation
+    # -----------------------------
     def set_pin(self, new_pin):
         if type(new_pin) == str:
             self.__pin = new_pin
@@ -273,7 +301,9 @@ class Atm:
         else:
             print("Invalid PIN format. Must be a string.")
 
-    # User menu
+    # -----------------------------
+    # Menu for user interaction
+    # -----------------------------
     def menu(self):
         user_input = input("""
 How would you like to proceed?
@@ -294,12 +324,16 @@ How would you like to proceed?
         else:
             print("Goodbye!")
 
+    # -----------------------------
     # Create PIN
+    # -----------------------------
     def create_pin(self):
         self.__pin = input("Enter your new PIN: ")
         print("PIN set successfully")
 
-    # Deposit amount
+    # -----------------------------
+    # Deposit Amount
+    # -----------------------------
     def deposit(self):
         temp = input("Enter your PIN: ")
         if temp == self.__pin:
@@ -309,7 +343,9 @@ How would you like to proceed?
         else:
             print("Invalid PIN")
 
-    # Withdraw amount
+    # -----------------------------
+    # Withdraw Amount
+    # -----------------------------
     def withdraw(self):
         temp = input("Enter your PIN: ")
         if temp == self.__pin:
@@ -322,7 +358,9 @@ How would you like to proceed?
         else:
             print("Invalid PIN")
 
-    # Check balance
+    # -----------------------------
+    # Check Balance
+    # -----------------------------
     def check_balance(self):
         temp = input("Enter your PIN: ")
         if temp == self.__pin:
@@ -408,6 +446,33 @@ change(L1[:])  # Pass a copy of the list (cloning)
 # Permanent change is avoided due to cloning
 
 print("List after function call:", L1)
+
+# -----------------------------
+# Collection of Objects in Python
+# -----------------------------
+
+class Customer:
+    def __init__(self, name, age):  # Corrected 'def__init__' to 'def __init__'
+        self.name = name
+        self.age = age
+
+    def intro(self):
+        print("I am", self.name, "and my age is", self.age)  # Corrected syntax
+
+# Creating multiple Customer objects
+c1 = Customer("Yasir", 24)
+c2 = Customer("Baig", 23)
+c3 = Customer("Mughal", 7)
+
+# Storing objects in a list
+customers = [c1, c2, c3]
+
+# Looping through the list of objects
+for customer in customers:  # Corrected 'L' to 'customers' and used proper variable name
+    print(customer.name, customer.age)
+    customer.intro()
+
+
 
 
 
