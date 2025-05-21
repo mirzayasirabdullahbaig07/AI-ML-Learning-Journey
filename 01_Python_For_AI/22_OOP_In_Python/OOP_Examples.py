@@ -471,13 +471,3 @@ customers = [c1, c2, c3]
 for customer in customers:  # Corrected 'L' to 'customers' and used proper variable name
     print(customer.name, customer.age)
     customer.intro()
-
-
-
-
-
-
- 
-
-
-

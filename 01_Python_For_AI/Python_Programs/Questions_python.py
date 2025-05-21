@@ -10,28 +10,6 @@
 # 02_Datatypes_Func_Python (25 problems)
 # ============================
 
-# 1. Print the string literal "Hello, World!".
-# 2. Define a string literal and print its type.
-# 3. Define a float literal and print it.
-# 4. Define an integer literal and print it.
-# 5. Define a boolean literal and print it.
-# 6. Define a complex number literal and print its real and imaginary parts.
-# 7. Print a list literal containing 3 integers.
-# 8. Define and print a tuple literal containing 3 different data types.
-# 9. Define a set literal containing 5 unique elements.
-# 10. Define a dictionary literal with 3 key-value pairs and print it.
-# 11. Print the string literal containing escape characters like \n, \t.
-# 12. Define a multi-line string literal and print it.
-# 13. Define an integer literal with an underscore to make it more readable (e.g., 1_000_000).
-# 14. Convert a binary literal (e.g., 0b101) to decimal and print it.
-# 15. Convert an octal literal (e.g., 0o15) to decimal and print it.
-# 16. Convert a hexadecimal literal (e.g., 0x1F) to decimal and print it.
-# 17. Use a floating-point literal with scientific notation (e.g., 1e3) and print it.
-# 18. Use a boolean literal in an if statement and print a message based on its value.
-# 19. Demonstrate an invalid literal error by trying to create an incorrect literal.
-# 20. Print a string literal with special characters inside (like quotes inside a string).
-
-
 # 1. Add two numbers using the '+' operator.
 # 2. Subtract two numbers using the '-' operator.
 # 3. Multiply two numbers using the '*' operator.

@@ -774,3 +774,44 @@ print("134:", quote_str)
 # 135. Use complex numbers and print real and imaginary parts
 complex_num = 4 + 5j
 print("135: Real part:", complex_num.real, ", Imaginary part:", complex_num.imag)
+
+# 136. Add two numbers using the '+' operator.
+num__1 = 4
+num__2 = 45
+print("Addition:", num__1 + num__2)
+
+# 137. Subtract two numbers using the '-' operator.
+print("Subtraction:", num__1 - num__2)
+
+# 138. Multiply two numbers using the '*' operator.
+print("Multiplication:", num__1 * num__2)
+
+# 139. Divide two numbers using the '/' operator and print the result.
+print("Division:", num__1 / num__2)
+
+# 140. Use the modulus operator '%' to find the remainder of two numbers.
+print("Modulus:", num__1 % num__2)
+
+# 141. Use the exponent operator '**' to find the power of a number.
+print("Exponent (num__1 ** 2):", num__1 ** 2)
+
+# 142. Use floor division '//' to divide two numbers and print the quotient.
+print("Floor Division:", num__1 // num__2)
+
+# 143. Demonstrate the use of the '+' operator with string concatenation.
+num__3 = "num__1 " + str(num__2)
+print("String Concatenation:", num__3)
+
+# 144. Demonstrate the use of the 'in' operator to check if an element is in a string.
+num_yasir = "Yasir"
+print("Characters in 'Yasir':")
+for y in num_yasir:
+    print(y)
+
+# 145. Use the 'not' operator in an if statement to check a condition.
+not_fun = "yasir"
+not_fun2 = "Abdullah"
+if not (not_fun != "yasir" or not_fun2 != "Abdullah"):
+    print("This is true")
+
+# 21 May 2025
