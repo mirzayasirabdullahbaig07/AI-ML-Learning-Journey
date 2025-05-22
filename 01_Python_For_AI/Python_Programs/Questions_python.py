@@ -10,16 +10,7 @@
 # 02_Datatypes_Func_Python (25 problems)
 # ============================
 
-# 1. Add two numbers using the '+' operator.
-# 2. Subtract two numbers using the '-' operator.
-# 3. Multiply two numbers using the '*' operator.
-# 4. Divide two numbers using the '/' operator and print the result.
-# 5. Use the modulus operator '%' to find the remainder of two numbers.
-# 6. Use the exponent operator '**' to find the power of a number.
-# 7. Use floor division '//' to divide two numbers and print the quotient.
-# 8. Demonstrate the use of the '+' operator with string concatenation.
-# 9. Demonstrate the use of the 'in' operator to check if an element is in a list.
-# 10. Use the 'not' operator in an if statement to check a condition.
+
 # 11. Use the 'and' operator to check if two conditions are both true.
 # 12. Use the 'or' operator to check if at least one condition is true.
 # 13. Compare two numbers using the '==' operator.

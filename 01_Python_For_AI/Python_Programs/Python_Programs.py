@@ -692,6 +692,7 @@ def greet(customer):
 cust = Customer("Mirza", "Male")
 new_cust = greet(cust)
 print(new_cust.name)
+Atm()
 
 # When you pass a class object to a function,
 # the parameter becomes a reference to the same object.
@@ -815,3 +816,103 @@ if not (not_fun != "yasir" or not_fun2 != "Abdullah"):
     print("This is true")
 
 # 21 May 2025
+
+# 146. Use the 'and' operator to check if two conditions are both true.
+con_no_1 = "yasir"
+con_no_2 = "Abdullah"
+
+if con_no_1 == "yasir" and con_no_2 == "Abdullah":
+    print("Both conditions are True.")
+
+# 147. Use the 'or' operator to check if at least one condition is true.
+x = 5
+y = 10
+
+if x > 0 or y < 0:
+    print("At least one condition is True.")
+
+# 148. Compare two numbers using the '==' operator.
+a = 10
+b = 10
+
+if a == b:
+    print("a is equal to b.")
+
+# 149. Compare two numbers using the '!=' operator.
+a = 10
+b = 20
+
+if a != b:
+    print("a is not equal to b.")
+
+# 150. Compare two numbers using the '>' operator.
+a = 15
+b = 10
+
+if a > b:
+    print("a is greater than b.")
+
+# 151. Compare two numbers using the '<' operator.
+a = 5
+b = 10
+
+if a < b:
+    print("a is less than b.")
+
+# 152. Compare two numbers using the '>=' operator.
+a = 10
+b = 10
+
+if a >= b:
+    print("a is greater than or equal to b.")
+
+# 153. Compare two numbers using the '<=' operator.
+a = 5
+b = 10
+
+if a <= b:
+    print("a is less than or equal to b.")
+
+# 154. Use the 'is' operator to check if two variables refer to the same object.
+x = [1, 2, 3]
+y = x
+
+if x is y:
+    print("x and y refer to the same object.")
+
+# 155. Use the 'is not' operator to check if two variables do not refer to the same object.
+x = [1, 2, 3]
+y = [1, 2, 3]
+
+if x is not y:
+    print("x and y do not refer to the same object.")
+
+# 156. Demonstrate the use of the identity operator with lists.
+list1 = [1, 2, 3]
+list2 = list1
+list3 = [1, 2, 3]
+
+print(list1 is list2)  # True
+print(list1 is list3)  # False
+
+# 157. Use the 'in' operator to check if a key exists in a dictionary.
+my_dict = {'name': 'yasir', 'age': 24}
+
+if 'name' in my_dict:
+    print("'name' key exists in the dictionary.")
+
+# 158. Perform a series of arithmetic operations in a single expression and print the result.
+result = (10 + 5) * 2 - 3 / 1
+print("Result:", result)
+
+# 159. Use the assignment operator '=' to assign values to variables.
+x = 100
+y = "Python"
+print(x, y)
+
+# 160. Use the augmented assignment operator '+=' to add and assign a value to a variable.
+counter = 10
+counter += 5
+print("Counter:", counter)
+
+# 22 May 2025
