@@ -61,10 +61,11 @@ A **Deep Learning** project that fine-tunes the **LLaMA 3.2 (3B)** model using a
 
 ## 🙋‍♂️ About Me
 
-**[Your Name]**  
-📌 Computer Science Graduate | Machine Learning & AI Enthusiast  
-📧 [Your Email]  
-🌐 GitHub: [your-github-profile]  
+**Mirza Yasir Abdullah Baig**  
+
+📌 Computer Science Graduate | Machine Learning & AI Enthusiast
+📧 yasirabdullah4549@gmail.com
+🌐 GitHub: mirzayasirabdullahbaig07
 🧠 Interested in: LLMs, Time Series Forecasting, NLP, and AI Applications in Healthcare
 
 ---
